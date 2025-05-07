@@ -52,6 +52,7 @@ const myCar = new Car("Toyota", 2020, "Corolla");
 
 
 
+
 function processValue(value: string | number): number {
     if (typeof value === 'number'){
         return value*2;
@@ -79,4 +80,23 @@ interface Product {
 
   
   
+  
+  enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+  }
+  
+  function getDayType(day: Day): string {
+    if(day === Day.Saturday || day === Day.Sunday){
+        return "Weekend";
+    } else{
+        return "Weekday";
+    }
+  }
  
+  
