@@ -52,4 +52,31 @@ const myCar = new Car("Toyota", 2020, "Corolla");
 
 
 
+function processValue(value: string | number): number {
+    if (typeof value === 'number'){
+        return value*2;
+    } else{
+        return value.length;
+    }
+}
+
+
+
+interface Product {
+    name: string;
+    price: number;
+  }
+  
+  function getMostExpensiveProduct(products: Product[]): Product | null {
+    return products.reduce((prev , current)=> {
+        if (current.price > prev.price ) {
+            return current;
+        }else{
+            return prev;
+        }
+    })
+  }
+
+  
+  
  
