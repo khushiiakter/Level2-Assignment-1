@@ -47,6 +47,7 @@ class Car extends Vehicle {
         return  `Model: ${this.model}`
     }
 }
+
 const myCar = new Car("Toyota", 2020, "Corolla");
 
 
@@ -109,7 +110,7 @@ async function squareAsync(n: number): Promise<number> {
     if(n < 0){
         throw new Error('Negative number not allowed');
     }
-    
+
     return new Promise ((resolve)=>{
         setTimeout(() => {
             resolve(n*n);
