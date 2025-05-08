@@ -69,6 +69,10 @@ interface Product {
   }
   
   function getMostExpensiveProduct(products: Product[]): Product | null {
+    if(products.length === 0){
+        return null;
+    }
+
     return products.reduce((prev , current)=> {
         if (current.price > prev.price ) {
             return current;
@@ -99,4 +103,17 @@ interface Product {
     }
   }
  
+
   
+async function squareAsync(n: number): Promise<number> {
+    if(n < 0){
+        throw new Error('Negative number not allowed');
+    }
+    
+    return new Promise ((resolve)=>{
+        setTimeout(() => {
+            resolve(n*n);
+        }, 1000);
+    })
+}
+
