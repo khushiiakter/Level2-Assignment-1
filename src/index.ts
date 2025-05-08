@@ -106,6 +106,7 @@ interface Product {
  
 
   
+  
 async function squareAsync(n: number): Promise<number> {
     if(n < 0){
         throw new Error('Negative number not allowed');

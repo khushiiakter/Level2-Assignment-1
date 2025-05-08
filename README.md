@@ -54,7 +54,7 @@ Both interface and type are powerful tools that help us define the shape of data
 ---
 ## Differences Between Interfaces and Types: 
 
-## 1. Type Representation
+## - Type Representation
 
 - **Type alias** can define:
   - primitive types (`string`, `number`, `boolean`)
@@ -66,7 +66,7 @@ We can't define these using interfaces. Interfaces are primarily used for defini
 
 ---
 
-## 2. Syntax Differences
+## - Syntax Differences
 
 Both type and interface can describe the shape of an object or a function signature. But their syntax differs.
 
@@ -96,7 +96,7 @@ interface SetPoint {
 
 ---
 
-## 3. Extending and Composing
+## - Extending and Composing
 
 **Interfaces** are built to be extended using the `extends` keyword:
 
@@ -124,7 +124,7 @@ type Employee = Person & {
 
 ---
 
-## 4. Declaration Merging
+## - Declaration Merging
 
 **Interfaces support merging.** If we declare the same interface more than once, TypeScript merges them:
 
@@ -150,13 +150,13 @@ type Animal = { name: string };
 
 ---
 
-## 5. Object-Oriented Programming
+## - Object-Oriented Programming
 
 In object-oriented programming, **interfaces** are better suited because they can extend classes and support inheritance. This makes interfaces an ideal choice when working with OOP paradigms, as they provide a more structured approach and ensure consistency across derived classes.
 
 ---
 
-## 6. Use Cases Comparison
+## - Use Cases Comparison
 
 | Feature                | Interface | Type        |
 |------------------------|-----------|-------------|
@@ -167,6 +167,7 @@ In object-oriented programming, **interfaces** are better suited because they ca
 | Declaration merging    | Yes       | No          |
 
 
+---
 
 # 6. How does TypeScript help in improving code quality and project maintainability?
 
