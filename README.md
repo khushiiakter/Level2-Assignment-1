@@ -62,13 +62,13 @@ Both interface and type are powerful tools that help us define the shape of data
   - intersection types (`TypeA & TypeB`)
   - tuple types (`[number, string]`)
 
-You can't define these using interfaces. Interfaces are primarily used for defining the shape of objects and class contracts.
+We can't define these using interfaces. Interfaces are primarily used for defining the shape of objects and class contracts.
 
 ---
 
 ## 2. Syntax Differences
 
-Both `type` and `interface` can describe the shape of an object or a function signature. But their syntax differs.
+Both type and interface can describe the shape of an object or a function signature. But their syntax differs.
 
 ### Type Alias:
 
@@ -165,3 +165,25 @@ In object-oriented programming, **interfaces** are better suited because they ca
 | Unions & Intersections | No        | Yes         |
 | Primitives             | No        | Yes         |
 | Declaration merging    | Yes       | No          |
+
+
+
+# 6. How does TypeScript help in improving code quality and project maintainability?
+
+To answer this question, we first have to know what TypeScript is. Typescript is an Object Oriented Programming Language that is built on top of JS with Extra Features.
+
+Now the question is why do we use TypeScript over JavaScript ?
+
+## How TypeScript Improves code quality and maintainability:
+
+- In JavaScript, it’s very difficult to maintain a large codebase. JavaScript is a dynamically typed language, which means we can declare any type of variable at any time. In small projects, type-checking errors or bugs might be easy to catch. But in large-scale projects, these type-related bugs can become hard to find and fix.
+
+- In JavaScript  , we can’t catch the error until it does not go in the run time. But in TypeScript, we can find errors while writing.
+
+-  If we have to run code in an older browser , we need older versions of JavaScript . Typescript gives us the version control power to use any kind of js version. Typescript code can be transpiled into older versions of javascript.
+
+- We can get type safety . We can use all the javascript types in typescript. Plus TypeScript gives us TS own advanced types. 
+
+- TypeScript increases our productivity. It gives us suggestions while writing code, such as autocompletion, type hints, and error checking, which help reduce bugs and speed up development.
+
+- We get less bugs and less testing .It helps reduce bugs early in development, which also reduces the need for extensive testing later.
